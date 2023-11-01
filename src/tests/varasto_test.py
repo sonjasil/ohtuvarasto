@@ -69,7 +69,7 @@ class TestVarasto(unittest.TestCase):
         self.varasto.lisaa_varastoon(5)
         self.varasto.ota_varastosta(-5)
 
-        self.assertAlmostEqual(self.varasto.saldo, 5)
+        self.assertAlmostEqual(self.varasto.saldo, 4)
 
     def test_oikea_tulostus(self):
         self.varasto.lisaa_varastoon(4)
